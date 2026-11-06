@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leads Ledger</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><img src="icon.png" width="42" height="42" alt=""><h1>Leads Ledger</h1></header>
+    <form id="lead-form">
+      <label for="input-el">Website address</label>
+      <input id="input-el" type="text" inputmode="url" spellcheck="false" autocapitalize="none" autocomplete="off" placeholder="example.com">
+      <div class="actions">
+        <button id="input-btn" type="submit">Save input</button>
+        <button id="tab-btn" type="button">Save tab</button>
+      </div>
+    </form>
+    <p id="demo-note" hidden>In this web preview, paste a link to save it. Install the extension to use Save tab.</p>
+    <section aria-labelledby="list-title">
+      <div class="list-heading"><h2 id="list-title">Saved leads <span id="count">0</span></h2><button id="delete-btn" type="button" disabled>Delete all</button></div>
+      <p id="empty">Your saved links will appear here.</p>
+      <ul id="leads"></ul>
+      <p id="delete-hint" hidden>Double-click Delete all to clear the list.</p>
+    </section>
+    <p id="status" role="status"></p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #19362d; background: #e9eee7; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 38rem; margin: clamp(1rem, 8vh, 6rem) auto; padding: clamp(1.15rem, 5vw, 2.35rem); background: #fffdf6; border: 1px solid #b5c6b5; border-top: 5px solid #215842; border-radius: .65rem; }
+html.popup { width: 390px; }
+.popup main { margin: 0; border-radius: 0; padding: 1.15rem; }
+header, .actions, .list-heading, h2 { display: flex; align-items: center; gap: .65rem; }
+header { margin-bottom: 1.25rem; }
+h1 { margin: 0; font: 650 clamp(1.85rem, 5vw, 2.4rem)/1.16 Georgia, serif; letter-spacing: -.045em; }
+label { display: block; margin-bottom: .4rem; font-size: .88rem; font-weight: 650; }
+input, button { font: inherit; }
+input { width: 100%; padding: .7rem .8rem; border: 1px solid #809d85; border-radius: .3rem; background: white; color: inherit; }
+:focus-visible { outline: 3px solid #ad671a; outline-offset: 2px; }
+.actions { margin-top: .7rem; }
+button { padding: .55rem .9rem; cursor: pointer; color: #fff; background: #245b43; border: 1px solid #245b43; border-radius: .3rem; font-weight: 650; }
+button:hover:enabled { background: #153c2c; }
+button:disabled { opacity: .48; cursor: default; }
+#tab-btn, #delete-btn { color: #254e3b; background: transparent; }
+#tab-btn:hover:enabled, #delete-btn:hover:enabled { background: #e5eddf; }
+section { margin-top: 1.4rem; border-top: 1px solid #c8d3c3; padding-top: 1rem; }
+.list-heading { justify-content: space-between; }
+h2 { font-size: 1rem; margin: 0; }
+#count { font-size: .8rem; padding: .1rem .45rem; background: #e4ecdd; border-radius: .3rem; }
+#delete-btn { font-size: .8rem; padding: .35rem .6rem; }
+ul { list-style: none; padding: 0; margin: .7rem 0; max-height: 18rem; overflow: auto; }
+li { border-bottom: 1px solid #dce4d6; padding: .55rem 0; }
+a { color: #245c42; text-underline-offset: .16em; overflow-wrap: anywhere; }
+p { line-height: 1.5; }
+#empty, #delete-hint, #demo-note { color: #4c6054; font-size: .85rem; }
+#status { min-height: 1.4em; margin: .5rem 0 0; font-size: .85rem; }
+@media (max-width: 41rem) { body:not(.popup) main { margin-left: .6rem; margin-right: .6rem; } html.popup body main { margin: 0; } }
